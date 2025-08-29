@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
+:root{
+    --light-color: #00FF00;
+    --light-color-alt: #80FF80;
+    --primary-bg-color: #000000;
+    --secondary-bg-color: #011627;
+    --weird-blue: #0d00a4;
+    --weird-purple: #22007c;
+    --transparent-light-color: rgba(255, 255, 255, .05);
+    --transparent-dark-color: rgba(0, 0, 0, .75);
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-bg-color);
+    --font-family-headings:"Micro 5", sans-serif;
+    --font-family-content: "VT323", monospace;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /*font-size: 10px;*/
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primary-bg-color);
+    font-family: var(--font-family-headings);
+    font-size: var(--font-size-sm);
+    color: var(--light-color);
+    letter-spacing: 1px;
+    text-align: center;
+    transition: background-color .25s, color .25s;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+input, button{
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+    .game-title{
+      font-family: "Micro 5", sans-serif;
+      font-size: var(--font-size-xl);
+    font-weight: 400;
+    font-style: normal;;
+      color: var(--light-color);
+    }
+
+    .buttons{
+        margin-top: 15px;
+        text-align: center;
+
+    }
+
+    .buttons button{
+        margin: 0 8px;
+        padding: 6px 12px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+.canvas-container {
+  display: flex;
+  margin: 0 auto;   /* center */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (min-width: 600px) {
+.canvas-container{
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons button{
+    flex-direction: column;
+    font-size: var(--font-size-md);
+}
+.canvas-container{
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .canvas-container{
+        width: 738px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .canvas-container{
+        width: 962px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (orientation: portrait){
+    .canvas-container{
+            flex-direction: column;
+            align-items: center;
+    }
+}
