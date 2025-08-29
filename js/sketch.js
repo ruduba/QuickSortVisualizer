@@ -78,7 +78,7 @@ function sleep(ms){
 function draw(){
 background(0);
 for(let i=0; i<values.length; i++){
-    noStroke();
+    stroke(0);
     if (states[i] == 0){
         fill(255, 0, 0);
     } else if(states[i] == 1){
